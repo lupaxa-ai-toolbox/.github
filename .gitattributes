@@ -1,0 +1,16 @@
+# =============================================================================
+# GitHub Linguist
+# =============================================================================
+
+# Versioning / makefile-skills tooling — not project source
+Makefile linguist-vendored
+makefiles.config linguist-vendored
+checkmake.ini linguist-vendored
+.bumpversion.toml linguist-vendored
+
+# Standard bootstrap CI — not the documentation product of this repo
+.github/workflows/** linguist-vendored
+
+# Community documentation is the product; include Markdown in language stats
+# (Markdown is documentation by default and otherwise omitted from the bar)
+*.md linguist-detectable
